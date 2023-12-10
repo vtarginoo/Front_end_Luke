@@ -1,0 +1,155 @@
+:root {
+  --primarycolor: #161616;
+  --lighprimary: #ffffff;
+  --darkcolor: #161616e1;
+  --moreonecolor: #066ff7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe Ui";
+  color: var(--lighprimary);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: var(--primarycolor);
+  color: var(--darkcolor);
+}
+
+header > h1 > i {
+  margin-right: 0, 5rem;
+  color: var(--lighprimary);
+}
+
+main {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--darkcolor);
+  flex-grow: 1;
+}
+
+.newItem {
+  /* background-color: rgb(225, 222, 199); */
+  padding: 30px 40px;
+  color: var(--darkcolor);
+  display: flex;
+  justify-content: center;
+}
+
+.newItem:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#newDate {
+  margin: 0;
+  border: 1px solid rgb(35, 32, 24);
+  width: 10%;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--darkcolor);
+}
+
+#newRepay {
+  margin: 0;
+  border: 1px solid rgb(35, 32, 24);
+  width: 25%;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--darkcolor);
+}
+
+#newCategory {
+  margin: 0;
+  border: 1px solid rgb(35, 32, 24);
+  width: 20%;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--darkcolor);
+  option {
+    color: var(--darkcolor);
+  }
+}
+
+#newValue {
+  margin: 0;
+  border: 1px solid rgb(35, 32, 24);
+  width: 8%;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--darkcolor);
+}
+
+.addBtn {
+  padding: 9px 10px;
+  background-color: rgb(35, 32, 24);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.addBtn:hover {
+  background-color: #066ff7;
+  color: white;
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.close:hover {
+  color: #f44336;
+  font-weight: bolder;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 10px;
+  font-size: 16px;
+  transition: 0.2s;
+  text-align: center;
+  color: var(--darkcolor);
+}
+
+table {
+  background-color: var(--lighprimary);
+  width: 50%;
+}
+
+th {
+  width: 25%;
+  color: var(--darkcolor);
+}
+
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+tr:hover {
+  background: rgb(200, 199, 199);
+}
